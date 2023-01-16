@@ -1,0 +1,11 @@
+#######  Section 1:
+
+
+1-2. Constatez que le code s'exécute toujours sans erreur. Expliquez pourquoi.
+La variable déclarée avec var est accessible à toutes les portées du script, y compris les blocs de code, tandis que la variable déclarée avec let est uniquement accessible dans la portée où elle est déclarée.
+
+
+3-4. Cela ne fonction pas car const = constance donc la variable reste constante tout le long du code 
+c'est-à-dire une variable qui ne peut pas être modifiée une fois qu'elle a été assignée une valeur grossomodo
+
+#######  Section 2:

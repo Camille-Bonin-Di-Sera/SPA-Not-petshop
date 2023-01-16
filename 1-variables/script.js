@@ -1,25 +1,25 @@
 //1.1 Types simples
 
-var name = 'Jacques';
-var age = 80;
-var useless = 'something';
+const name = 'Jacques';
+let age = 80;
+const useless = 'something';
 
 console.log(name, age, useless);
 
 age += 1;
-useless = 14;
+
 //On affiche à nouveau les valeurs de ces variables dans la console
 console.log(name, age, useless);
 
 //----------------------//
 //1.2 Tableaux
 
-let fruits = ['apple', 'pear', 'cherry'];
+const fruits = ['apple', 'pear', 'cherry'];
 let vegetables = ['potato', 'curlyflower', 'tomato'];
 
 console.log(fruits, vegetables);
 
-fruits.push('banana');
+vegetables = [...vegetables, 'banana'];
 vegetables.pop();
 
 console.log(fruits, vegetables);
@@ -27,7 +27,7 @@ console.log(fruits, vegetables);
 //----------------------//
 //1.3 Objets
 
-let settings = {
+const settings = {
     sound: true,
     music: false,
     graphics: 'high',
@@ -43,7 +43,6 @@ let savedGame = {
 console.log(settings, savedGame);
 
 savedGame = {};
-settings.music = true;
-settings.resolution = [3840, 2160];
+settings = {...settings, music: true, resolution: [3840, 2160]};
 
 console.log(settings, savedGame);
